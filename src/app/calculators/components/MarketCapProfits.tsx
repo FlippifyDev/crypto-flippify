@@ -3,7 +3,7 @@
 import React, { useState, useEffect } from "react";
 
 import { formatLargeNumber } from "@/app/utils/format-large-number";
-import fetchSolPrice from "@/app/utils/fetch-crypto-price";
+import { fetchCryptoPrice } from "@/app/utils/fetch-crypto-price";
 import TradingInput from "./TradingInput";
 import defaultFees from "@/app/config/default-fees.json";
 import Checkbox from "./Checkbox";
@@ -27,7 +27,7 @@ const MarketCapProfits = () => {
 	// Fetch current SOL price when the component mounts
 	useEffect(() => {
 		const getSolPrice = async () => {
-			const price = await fetchSolPrice("solana", "usd");
+			const price = await fetchCryptoPrice("solana", "usd");
 			if (price !== null) {
 				setSolPrice(price);
 			}
