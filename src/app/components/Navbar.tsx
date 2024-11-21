@@ -5,7 +5,7 @@ import Logo from './Logo';
 
 const Navbar = () => {
 	return (
-		<nav className="bg-darkBlue text-white p-4">
+		<nav className="bg-darkBlue text-white px-6 py-4">
 			<div className="w-full flex justify-between items-center">
 				{/* Logo or Brand Name */}
 				<Logo />
