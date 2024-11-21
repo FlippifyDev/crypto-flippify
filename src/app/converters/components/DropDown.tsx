@@ -40,7 +40,7 @@ const Dropdown: React.FC<DropdownProps> = ({ options, value, onChange }) => {
 			<div className='h-full z-10'>
 				<button
 					type="button"
-					className="inline-flex justify-between items-center w-30 h-14 rounded-full bg-darkBlue border-2 border-neonGreen text-white px-4 py-2 text-lg font-medium transition duration-200 ease-in-out focus:ring-2 focus:ring-neonGreen focus:outline-none focus:border-neonGreen focus:bg-opacity-50 focus:border-transparent"
+					className="inline-flex justify-between items-center w-30 h-14 rounded-full active:scale-95 bg-darkBlue border-2 border-neonGreen text-white px-4 py-2 text-lg font-medium transition duration-200 ease-in-out focus:ring-2 focus:ring-neonGreen focus:outline-none focus:border-neonGreen focus:bg-opacity-50 focus:border-transparent"
 					onClick={toggleDropdown}
 				>
 					{/* Display the full name corresponding to the selected value */}
@@ -51,6 +51,7 @@ const Dropdown: React.FC<DropdownProps> = ({ options, value, onChange }) => {
 						viewBox="0 0 20 20"
 						fill="currentColor"
 						aria-hidden="true"
+						aria-label="Dropdown Toggle"
 					>
 						<path
 							fillRule="evenodd"

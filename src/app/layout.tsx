@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { Analytics } from "@vercel/analytics/react";
 import Script from "next/script";
 
 import localFont from "next/font/local";
@@ -75,7 +74,6 @@ export default function RootLayout({
 				}}
 			>
 				{children}
-				<Analytics />
 			</body>
 		</html>
 	);
