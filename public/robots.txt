@@ -1,0 +1,13 @@
+# robots.txt file for Your Website
+
+# Allow all bots to crawl the entire site
+User-agent: *
+Disallow: 
+
+# Disallow bots from crawling specific folders or pages
+Disallow: /private/
+Disallow: /tmp/
+Disallow: /admin/
+
+# Allow bots to crawl specific pages or files
+Allow: /public/
